@@ -1,7 +1,10 @@
 import { useFonts } from 'expo-font';
-import { SafeAreaView, Text } from "react-native";
+import { SafeAreaView, Text, View } from "react-native";
 import Header from '../components/Header/Header';
-import { colors, fonts } from '../constants/themes.js';
+import NoTasks from "../components/NoTasks/NoTasks";
+import TaskCard from '../components/TaskCard/TaskCard';
+import { Colors, Fonts } from '../constants/themes.js';
+
 
 export default function home() {
   const [fontsLoaded, fontError] = useFonts({
@@ -9,23 +12,40 @@ export default function home() {
     'Poppins-Bold': require('../assets/fonts/Poppins-Bold.ttf'),
     'Poppins-Medium': require('../assets/fonts/Poppins-Medium.ttf'),
     "Poppins-SemiBold": require('../assets/fonts/Poppins-SemiBold.ttf')
-  });
+  }); 
   return (
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor:colors.primary_background,
+        backgroundColor:Colors.primary_background,
       }}
     >
      <Header/>
      <Text style = {{
       padding:20,
-      color:colors.titles,
+      color:Colors.titles,
       fontSize:17, 
-      fontFamily:fonts.titles
+      fontFamily:Fonts.titles
       }}>
-        Tarefa Crítica
+        Tarefas Críticas
      </Text>
+     <View style={{gap:15}}>
+      <TaskCard icon = {"🥤"} text = {"Beber Agua"}/>
+      <TaskCard icon = {"💪"} text = {"Tomar creatina"}/>
+      <TaskCard icon = {"🐶"} text = {"Alimentar cachorro"}/>
+
+
+     </View> 
+     
+     <Text style = {{
+      padding:20,
+      color:Colors.titles,
+      fontSize:17, 
+      fontFamily:Fonts.titles
+      }}>
+        Já foi
+     </Text>
+     <NoTasks/>
     </SafeAreaView>
   );
 }

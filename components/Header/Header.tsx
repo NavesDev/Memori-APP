@@ -12,6 +12,7 @@ import styles from "./Header.style";
           Paz de espírito, sem  neura
         </Text>
       </View> 
+      
       <Feather style= {styles.button} name="settings" size={18} color="black" />
     </SafeAreaView>
 );

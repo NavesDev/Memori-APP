@@ -1,5 +1,5 @@
 import { Platform, StatusBar, StyleSheet } from 'react-native';
-import { colors, fonts } from '../../constants/themes'; // Puxando as cores do nosso tema global
+import { Colors, Fonts } from '../../constants/themes';
 
 export default StyleSheet.create({
     mainView:{
@@ -15,19 +15,19 @@ export default StyleSheet.create({
         gap:7,
     },
     title: {
-        color:colors.header_title,
+        color:Colors.header_title,
         fontSize:24,
-        fontFamily:fonts.headers,
+        fontFamily:Fonts.headers,
         lineHeight : 24,
         padding:0
     },
     desc:{
         fontSize:14,
-        fontFamily:fonts.texts,
-        color:colors.header_subtitle,
+        fontFamily:Fonts.texts,
+        color:Colors.header_subtitle,
         padding:0
     },
     button:{
-        color:colors.header_button
+        color:Colors.header_button
     }
 });

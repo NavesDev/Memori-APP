@@ -1,4 +1,4 @@
-export const colors = {
+export const Colors = {
     primary_background: "#FCFDFE",
     header_title:"#0f172b",
     header_subtitle:"#45556c",
@@ -6,7 +6,7 @@ export const colors = {
     header_button:"#45556c"
 }
 
-export const fonts = {
+export const Fonts = {
     headers:"Poppins-SemiBold",
     titles:"Poppins-Medium",
     texts:"Poppins"
