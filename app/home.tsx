@@ -1,5 +1,5 @@
 import { useFonts } from 'expo-font';
-import { SafeAreaView, Text, View } from "react-native";
+import { ScrollView, Text, View } from "react-native";
 import Header from '../components/Header/Header';
 import NoTasks from "../components/NoTasks/NoTasks";
 import TaskCard from '../components/TaskCard/TaskCard';
@@ -14,7 +14,7 @@ export default function home() {
     "Poppins-SemiBold": require('../assets/fonts/Poppins-SemiBold.ttf')
   }); 
   return (
-    <SafeAreaView
+    <ScrollView
       style={{
         flex: 1,
         backgroundColor:Colors.primary_background,
@@ -25,16 +25,16 @@ export default function home() {
       padding:20,
       color:Colors.titles,
       fontSize:17, 
-      fontFamily:Fonts.titles
+      fontFamily:Fonts.titles,
       }}>
         Tarefas Críticas
      </Text>
-     <View style={{gap:15}}>
+     <View style={{gap:20}}>
       <TaskCard icon = {"🥤"} text = {"Beber Agua"}/>
       <TaskCard icon = {"💪"} text = {"Tomar creatina"}/>
       <TaskCard icon = {"🐶"} text = {"Alimentar cachorro"}/>
-
-
+      <TaskCard icon = {"😏"} text = {"Teste"}/>
+    
      </View> 
      
      <Text style = {{
@@ -46,7 +46,7 @@ export default function home() {
         Já foi
      </Text>
      <NoTasks/>
-    </SafeAreaView>
+    </ScrollView>
   );
 }
 

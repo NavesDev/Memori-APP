@@ -1,8 +1,8 @@
 import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     cardView:{
-        borderWidth:2,
-        borderColor:"rgba(0, 0, 0, 0.23)",
+        borderWidth:0,
+        borderColor:"rgba(0, 0, 0, 0.24)",
         marginLeft :20,
         marginRight:20,
         padding:15,
@@ -10,14 +10,15 @@ export default StyleSheet.create({
         flexDirection:"row",
         gap:20,
         alignItems:"center",
-        boxShadow:"3px 3px 10px rgba(0, 0, 0, 0.23)"
+        boxShadow:"0px 0px 5px rgba(0, 0, 0, 0.46)"
     },
     emoji:{
-        fontSize:35
+        fontSize:40
     },
     taskName:{
         fontSize:18,
         fontFamily:"Poppins",
-        paddingTop:5
+        paddingTop:7,
+        flex:1
     }
 })

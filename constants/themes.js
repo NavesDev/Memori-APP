@@ -3,7 +3,8 @@ export const Colors = {
     header_title:"#0f172b",
     header_subtitle:"#45556c",
     titles:"#314158",
-    header_button:"#45556c"
+    header_button:"#45556c",
+    ligth_text:"#657081ff"
 }
 
 export const Fonts = {

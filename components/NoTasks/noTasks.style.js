@@ -1,11 +1,12 @@
 import { StyleSheet } from 'react-native';
-import { Fonts } from "../../constants/themes";
+import { Colors, Fonts } from "../../constants/themes";
+
 export default StyleSheet.create({
     mainView:{
         flexDirection:"column",
         justifyContent:'center',
         alignItems:"center",
-        padding:30
+        padding:30,
     },
     emoji:{
         fontSize:40,
@@ -13,6 +14,9 @@ export default StyleSheet.create({
     },
     text:{
         fontSize:16,
-        fontFamily:Fonts.texts
+        fontFamily:Fonts.texts,
+        color:Colors.ligth_text,
+        width:"100%",
+        textAlign:'center'
     }
 })

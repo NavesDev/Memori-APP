@@ -13,6 +13,7 @@ export default StyleSheet.create({
     texts: {
         flexDirection: "column",
         gap:7,
+        flex:1
     },
     title: {
         color:Colors.header_title,
