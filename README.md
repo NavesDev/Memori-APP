@@ -42,11 +42,11 @@ Para rodar este projeto localmente, você vai precisar do [Expo Go](https://expo
 
 1.  Clone o repositório:
     ```bash
-    git clone [https://github.com/seu-usuario/memori.git](https://github.com/seu-usuario/memori.git)
+    git clone [https://github.com/NavesDev/Memori-APP.git](https://github.com/NavesDev/Memori-APP.git)
     ```
 2.  Entre na pasta do projeto e instale as dependências:
     ```bash
-    cd memori
+    cd Memori-APP
     npm install
     ```
 3.  Inicie o servidor de desenvolvimento:
@@ -93,11 +93,11 @@ To run this project locally, you will need the [Expo Go](https://expo.dev/go) ap
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/your-username/memori.git](https://github.com/your-username/memori.git)
+    git clone [https://github.com/NavesDev/Memori-APP.git](https://github.com/NavesDev/Memori-APP.git)
     ```
 2.  Enter the project folder and install dependencies:
     ```bash
-    cd memori
+    cd Memori-APP
     npm install
     ```
 3.  Start the development server:
